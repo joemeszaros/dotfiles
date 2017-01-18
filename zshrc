@@ -84,6 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+source $HOME/.zsh/path
 alias gits="git status"
 alias gitb="git branch"
 alias ssk="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
