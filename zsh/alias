@@ -1,0 +1,8 @@
+# git aliases 
+alias gits="git status"
+alias gitb="git branch"
+
+# SSH aliased
+alias ssk="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
+alias ssku="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -l ubuntu"
+alias sske="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -l ec2-user"

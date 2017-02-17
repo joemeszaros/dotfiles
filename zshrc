@@ -85,12 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source $HOME/.zsh/path
-alias gits="git status"
-alias gitb="git branch"
-alias ssk="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
-alias ssku="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -l ubuntu"
-alias sske="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -l ec2-user"
-alias ackui="ack --ignore-dir dist"
-
+source $HOME/.zsh/alias
+source $HOME/.alias
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
