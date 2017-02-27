@@ -51,7 +51,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git history-substring-search virtualenvwrapper z)
+plugins=(git git-extras git-it-on history-substring-search virtualenvwrapper z)
 
 source $ZSH/oh-my-zsh.sh
 
