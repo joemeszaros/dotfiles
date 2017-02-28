@@ -12,12 +12,15 @@
             "~/.vimrc": "vimrc",
             "~/.zsh": "zsh",
             "~/.zshrc": "zshrc",
-            "~/.oh-my-zsh": "oh-my-zsh"
+            "~/.oh-my-zsh": "oh-my-zsh",
+            "~/.git-extras/etc/git-extras-completion.zsh": "git-extras/etc/git-extras-completion.zsh"
         }
     },
     {
         "shell": [
-            ["git submodule update --init --recursive", "Installing/updating submodules"]
+            ["git submodule update --init --recursive", "Installing/updating submodules"],
+            ["mkdir -p ~/.git-extras", "Create git extra folder"],
+            ["make -C git-extras install PREFIX=~/.git-extras", "Installing git extras"]
         ]
     }
 ]

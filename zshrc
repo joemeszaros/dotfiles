@@ -87,5 +87,6 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh/path
 source $HOME/.zsh/alias
 source $HOME/.alias
+source $HOME/.git-extras/etc/git-extras-completion.zsh
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8

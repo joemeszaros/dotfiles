@@ -3,4 +3,7 @@
 	url = https://github.com/anishathalye/dotbot
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
-	url = https://github.com/robbyrussell/oh-my-zsh
+    url = https://github.com/robbyrussell/oh-my-zsh
+[submodule "git-extras"]
+	path = git-extras
+	url = https://github.com/tj/git-extras
