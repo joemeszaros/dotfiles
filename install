@@ -9,5 +9,6 @@ CONFIG="${BASEDIR}/install.conf.json"
 
 cd "${BASEDIR}"
 git submodule update --init --recursive "${DOTBOT_DIR}"
-
+t config --global alias.dsf '!f() { [ -z "$GIT_PREFIX" ] || cd "$GIT_PREFIX" '\
+    '&& git diff --color "$@" | diff-so-fancy  | less --tabs=4 -RFX; }; f'
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
