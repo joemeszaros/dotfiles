@@ -1380,7 +1380,7 @@ au! BufNewFile mutt* let @"="X-Editor: Vim-".version." http://www.vim.org\n"|exe
     " let mysyntaxfile="~guckes/.P/vim/syntax/syntax.vim"
     " URL: http://www.math.fu-berlin.de/~guckes/vim/syntax/syntax.vim
     " The main/standard syntax file:
-      so /usr/share/vim/vim80/syntax/syntax.vim
+      so /usr/local/share/vim/vim80/syntax/syntax.vim
     "
     " Use my own syntax file on "mail/news messages":
       let aucommand = "au BufNewFile,BufRead ".MAILNEWSFILES
@@ -1616,7 +1616,7 @@ syntax on
 set so=10
 let g:molokai_original = 1
 let g:rehash256 = 1
-colorscheme molokai
+"colorscheme molokai
 "hi Comment	guifg=yellow guibg=#000050 ctermfg=darkYellow
 hi ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\t/ containedin=ALL
@@ -1635,6 +1635,7 @@ nnoremap <F1> :set rnu! \| :set nu!<CR>
 let g:posero_default_mappings = 1
 " Execute a selection of code (very cool!)
 " Use VISUAL to select a range and then hit ctrl-h to execute it.
+set nocp
 execute pathogen#infect()
 set nonumber
 " Documentation
